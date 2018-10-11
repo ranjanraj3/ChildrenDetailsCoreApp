@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 using DefaultCoreApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace DefaultCoreApp.Controllers
 {
     public class ChildrenDetailsController : Controller
     {
+
+        private readonly ILogger<ChildrenDetailsController> _logger;
+
+        public ChildrenDetailsController(ILogger<ChildrenDetailsController> logger)
+        {
+            _logger = logger;
+        }
         public IActionResult Index()
         {
+            _logger.LogInformation("Index page is called for ChildrenDetails");
             return View();
         }
 
@@ -25,6 +34,7 @@ namespace DefaultCoreApp.Controllers
         [HttpPost]
         public ActionResult Index(ChildrenDetails objChildrenDetail)
         {
+            _logger.LogInformation("Index page is called to add ChildrenDetails records in database");
             try
             {
                 //if (ModelState.IsValid)
@@ -92,6 +102,7 @@ namespace DefaultCoreApp.Controllers
         /// <returns></returns>
         public ActionResult ChildrenLists(string searchString)
         {
+            _logger.LogInformation("ChildrenLists page is called");
 
             try
             {
@@ -126,6 +137,7 @@ namespace DefaultCoreApp.Controllers
         /// <returns></returns>
         public ActionResult Edit(int id)
         {
+            _logger.LogInformation("Index page is called from ChildrenLists page to update the existing records in database");
             try
             {
                 using (ChildrenDetailsContext db = new ChildrenDetailsContext())
@@ -153,6 +165,7 @@ namespace DefaultCoreApp.Controllers
 
         public ActionResult Delete(int id)
         {
+            _logger.LogInformation("ChildrenLists page is called to Delete the existing records");
             try
             {
                 ChildrenDetailsContext db = new ChildrenDetailsContext();
@@ -176,7 +189,7 @@ namespace DefaultCoreApp.Controllers
         [HttpPost]
         public ActionResult UploadFiles(IFormFile[] files)
         {
-
+            _logger.LogInformation("ChildrenLists page is called to Upload single or multiples file in database");
             try
             {
                 ChildrenDetailsContext db = new ChildrenDetailsContext();

@@ -1,4 +1,8 @@
-﻿@model ChildrenDetails
+﻿@using DefaultCoreApp
+@using DefaultCoreApp
+@using DefaultCoreApp.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ChildrenDetails
 @*@model IList<ChildrenDetails.Models.ChildrenDetail>*@
 
 @{
@@ -21,10 +25,10 @@
     <script src="~/js/jquery-ui-1.12.1.min.js"></script>
     <!-- Code to wire up your DatePicker -->
     <script type="text/javascript">
-    $(function () {
-        // This will make every element with the class "date-picker" into a DatePicker element
-        $('.date-picker').datepicker();
-    })
+        $(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $('.date-picker').datepicker();
+        })
     </script>
 
     <script type="text/javascript">

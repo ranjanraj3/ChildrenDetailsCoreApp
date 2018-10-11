@@ -1,0 +1,402 @@
+﻿@model DefaultCoreApp.Models.ChildrenDetails
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChildrenDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildBirthDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildBirthDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChildType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChildType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Private)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Private)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1ChildRelation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1ChildRelation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Unit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Unit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Province)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Province)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1PostalCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1PostalCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1HomePhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1HomePhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1WorkPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1WorkPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1CellPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1CellPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1PrimaryEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1PrimaryEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent1SpecialCustody)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent1SpecialCustody)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Private)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Private)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2ChildRelation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2ChildRelation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Unit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Unit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Province)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Province)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2PostalCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2PostalCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2HomePhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2HomePhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2WorkPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2WorkPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2CellPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2CellPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2PrimaryEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2PrimaryEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Parent2SpecialCustody)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Parent2SpecialCustody)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiblingName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiblingName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiblingAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiblingAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiblingGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiblingGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact1Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact1Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact1Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact1Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact1Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact1Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact1Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact1Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact1Relationship)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact1Relationship)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact2Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact2Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact2Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact2Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact2Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact2Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact2Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact2Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact2Relationship)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact2Relationship)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact3Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact3Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact3Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact3Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact3Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact3Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact3Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact3Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact3Relationship)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact3Relationship)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact4Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact4Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact4Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact4Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact4Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact4Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact4Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact4Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact4Relationship)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact4Relationship)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
